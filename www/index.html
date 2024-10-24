@@ -219,6 +219,12 @@
         var img1 = new Image();
         img1.src = "freshsteak.jpg";
 
+        var img2 = new Image();
+        img2.src = "midsteak.jpg"; 
+
+        var img3 = new Image();
+        img3.src = "badsteak.jpg";
+
         if (active) { 
             etime = parseInt( (new Date() - startTime)/1000 ); 
             rest = period - etime;
@@ -230,11 +236,18 @@
                 ctx.drawImage(img1, 0, 0, 300, 300);
             }
         }
-        
+        if(rest <= (1/2)*period){
+
+            img2.onload = function(){
+                ctx.drawImage(img2, 0, 0, 300, 300);
+            }
+        }
         if (rest == 0){
             active = false;
             alarm();
-            
+            img3.onload = function(){
+                ctx.drawImage(img3, 0, 0, 300, 300);
+            }
         }
     
 
