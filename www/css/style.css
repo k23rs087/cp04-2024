@@ -55,19 +55,17 @@
     }
     
     #btnA {
-        font-size: 20px;
+        font-size: 40px;
         position:absolute; top:430px; left:2%; width:43%; height:60px; 
-        background-color: yellow;
-        color: green;
     }
     
     #btnB {
-        font-size: 20px;
+        font-size: 30px;
         position:absolute; top:430px; left:45%; width:25%; height:60px; 
     }
 
     #btnC {
-        font-size: 10px;
+        font-size: 30px;
         position:absolute; top:430px; left:70%; width:28%; height:60px; 
     }
     
@@ -84,13 +82,14 @@
     input[type=number] {text-align: right;}
 
     body {
-        background-color: skyblue;
+        background-color: rgb(213, 226, 238);
     }
 
     button{
-        color: blue;
+        color: rgb(49, 49, 199);
         font-family: Times;
         border-radius: 20px;
+        background-color: rgb(56, 230, 122);
     }
 
     #steakcanvas{
